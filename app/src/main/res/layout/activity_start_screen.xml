@@ -7,10 +7,30 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.choudhary.harsh.skyline.StartScreen">
+    tools:context="com.choudhary.harsh.skyline.StartScreen"
+    android:background="@drawable/skyline">
 
-    <TextView
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="Identify"
+        android:id="@+id/startButton"
+        android:layout_marginTop="55dp"
+        android:backgroundTint="#000000"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/settingButton"
+        android:enabled="true"
+        android:onClick="StartCamera" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:id="@+id/settingButton"
+        android:layout_marginTop="48dp"
+        android:backgroundTint="#000000"
+        android:layout_below="@+id/startButton"
+        android:layout_centerHorizontal="true"
+        android:enabled="true"
+        android:onClick="RunSettings" />
 </RelativeLayout>
